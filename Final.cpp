@@ -50,13 +50,10 @@ void printQueue() {
 
 int main() {
 	int data; 
-	queue = (int*)malloc(sizeof(int) * (t + 1));
     printf("당신은 편의점 알바생입니다\n");
-    
-    printf("현재 상품의 재고개수를 입력해주세요\n");
-    
-    scanf("%d", &t);
-    
+     printf("현재 상품의 재고개수를 입력해주세요\n");
+      scanf("%d", &t);
+    queue = (int*)malloc(sizeof(int) * (t + 1));
     printf("현재 있는 재고의 유통기한을 입력해주세요 ex) 211021\n");
     for (int i = 0; i < t; i++) {
         scanf("%d",& a[i]);
